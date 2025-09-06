@@ -6,12 +6,17 @@ import Contact from "./components/Contact";
 
 export default function App() {
   return (
-    <div className="font-sans">
+    <>
       <Navbar />
-      <section id="about"><About /></section>
-      <section id="skills"><Skills /></section>
-      <section id="projects"><Projects /></section>
-      <section id="contact"><Contact /></section>
-    </div>
+      <main className="pt-5 mt-5">
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <footer className="bg-dark text-white text-center py-3">
+        © {new Date().getFullYear()} Mohamed Alaa. All rights reserved.
+      </footer>
+    </>
   );
 }

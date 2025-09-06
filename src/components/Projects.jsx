@@ -2,33 +2,39 @@ export default function Projects() {
   const projects = [
     {
       title: "Laptop E-commerce",
-      img: ".",
-      desc: "E-commerce system for laptops using ASP.NET Core MVC."
+      desc: "Online store for laptops built with ASP.NET Core MVC.",
+      img: "https://via.placeholder.com/300x200",
     },
     {
       title: "Shipping Management",
-      img: ".",
-      desc: "Manage employees, salaries, and deliveries."
+      desc: "System to manage shipping schedules and deliveries.",
+      img: "https://via.placeholder.com/300x200",
     },
     {
-      title: "Vote Salaries",
-      img: ".",
-      desc: "Voting system for managing employee salaries."
-    }
+      title: "Vote Salaries App",
+      desc: "App for managing employee salary voting system.",
+      img: "https://via.placeholder.com/300x200",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 p-10">
-      <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {projects.map((p, i) => (
-          <div key={i} className="bg-white p-4 rounded shadow">
-            <img src={p.img} alt={p.title} className="w-full rounded mb-3" />
-            <h3 className="text-xl font-semibold">{p.title}</h3>
-            <p className="text-gray-600">{p.desc}</p>
-          </div>
-        ))}
+    <section id="projects" className="py-5 bg-light">
+      <div className="container">
+        <h2 className="fw-bold text-center mb-4">My Projects</h2>
+        <div className="row">
+          {projects.map((project, index) => (
+            <div key={index} className="col-md-4 mb-4">
+              <div className="card h-100 shadow-sm">
+                <img src={project.img} className="card-img-top" alt={project.title} />
+                <div className="card-body">
+                  <h5 className="card-title">{project.title}</h5>
+                  <p className="card-text">{project.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

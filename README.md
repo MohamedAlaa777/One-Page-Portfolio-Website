@@ -1,6 +1,6 @@
 # My Portfolio (React + Vite)
 
-A simple one-page personal portfolio built with React.js and TailwindCSS.
+A simple one-page personal portfolio built with React.js and Bootstrap.
 
 ## Features
 

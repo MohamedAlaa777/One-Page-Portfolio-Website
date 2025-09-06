@@ -1,12 +1,19 @@
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100 text-center p-6">
-      <h1 className="text-4xl font-bold">Mohamed Alaa</h1>
-      <p className="text-xl mt-2 text-gray-600">ASP.NET Core & Web Developer</p>
-      <p className="max-w-xl mt-4 text-gray-700">
-        I’m passionate about building web applications using modern technologies.
-        I enjoy solving problems, learning new tools, and creating useful projects.
-      </p>
-    </div>
+    <section id="about" className="py-5 bg-light text-center">
+      <div className="container">
+        <h2 className="fw-bold mb-3">About Me</h2>
+        <p className="lead">
+          Hi, I’m <strong>Mohamed Alaa</strong>, an ASP.NET Core Developer based in Alexandria, Egypt.  
+          I specialize in web development with C#, SQL, and modern front-end technologies.  
+          I love solving problems and building projects that make an impact.
+        </p>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Profile"
+          className="rounded-circle shadow mt-4"
+        />
+      </div>
+    </section>
   );
 }
