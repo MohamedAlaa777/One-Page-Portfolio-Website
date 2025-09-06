@@ -3,17 +3,17 @@ export default function Projects() {
     {
       title: "Laptop E-commerce",
       desc: "Online store for laptops built with ASP.NET Core MVC.",
-      img: "https://via.placeholder.com/300x200",
+      img: ".",
     },
     {
       title: "Shipping Management",
       desc: "System to manage shipping schedules and deliveries.",
-      img: "https://via.placeholder.com/300x200",
+      img: ".",
     },
     {
       title: "Vote Salaries App",
       desc: "App for managing employee salary voting system.",
-      img: "https://via.placeholder.com/300x200",
+      img: ".",
     },
   ];
 
